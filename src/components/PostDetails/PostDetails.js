@@ -8,7 +8,7 @@ const PostDetails = () => {
     const useStyles = makeStyles({
         root:{
             background:'white',
-            height:'300px',
+            height:'250px',
             boxShadow:'10px 10px 5px #aaa',
             borderRadius:'10px'
         },
@@ -28,7 +28,6 @@ const PostDetails = () => {
     return (
         <Container fixed>
             <div className={classes.root}>
-            <h4>Post Id: {post.id}</h4>
             <h3>Title: {post.title}</h3>
             <p className={classes.body}>{post.body}</p>
             </div>
