@@ -13,18 +13,18 @@ function App() {
   return (
     <Router>
       <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/home">
-        <Home/>
-      </Route>
-      <Route path="/details/:postId">
-        <PostDetails></PostDetails>
-      </Route>
-      <Route path="*">
-        <NoMatch/>
-      </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/details/:postId">
+          <PostDetails></PostDetails>
+        </Route>
+        <Route path="*">
+          <NoMatch />
+        </Route>
       </Switch>
     </Router>
   );

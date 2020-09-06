@@ -2,16 +2,16 @@ import React, { useState, useEffect } from 'react';
 import Post from '../Post/Post';
 
 const Home = () => {
-    const [posts,setPost]=useState([]);
-    useEffect(()=>{
+    const [posts, setPost] = useState([]);
+    useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/posts")
-        .then(res=>res.json())
-        .then(data=>setPost(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setPost(data))
+    }, [])
     return (
         <div>
             {
-                posts.map(post=> <Post key={post.id} post={post}></Post>)
+                posts.map(post => <Post post={post}></Post>)
             }
 
         </div>
